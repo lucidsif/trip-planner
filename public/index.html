@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trip Planner</title>
+    <link rel="stylesheet" href="./bundle.css">
+    <script src="./bundle.js" defer></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">TripPlanner</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<div id="container">
+    <div id="mapContainer">
+        <div id="map"></div>
+    </div>
+    <div id="panel">
+        <div id="activityPanel">
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Hotels</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Restaurants</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Activities</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+        </div>
+        <h1 id="dayLabel"><span class="label label-default">Day One</span></h1>
+        <div id="planningPanel">
+            <div id="dayBar">
+                <div id="btnGroup">
+                    <button type="button" class="btn btn-default btn-circle">1</button>
+                    <button type="button" class="btn btn-default btn-circle">2</button>
+                    <button type="button" class="btn btn-default btn-circle">3</button>
+                    <button type="button" class="btn btn-default btn-circle">4</button>
+                </div>
+            </div>
+            <div id="myPlans">
+                <ul class="list-group">
+                    <li class="list-group-item">Hotels</li>
+                    <li class="list-group-item">Restaurants</li>
+                    <li class="list-group-item">Activities</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
